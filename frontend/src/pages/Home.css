@@ -1,0 +1,88 @@
+.hero {
+    height: 80vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 5rem;
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeIn 1.4s ease-out;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+}
+
+.info-card {
+    background-color: var(--surface-color);
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--surface-color-light);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: var(--accent-gold);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.info-card .phone,
+.info-card .hours {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+}
