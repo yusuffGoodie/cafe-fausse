@@ -5,7 +5,8 @@
 - **Image Generation Tools**: Used for generating aesthetic imagery corresponding to the Café Fausse theme directly into the frontend assets.
 
 ## How it was used
-The AI tooling was utilized for the end-to-end development of the Café Fausse web application. This included:
+The AI tooling was utilized for the end-to-end development of the Café Fausse web application. To facilitate this, the Software Requirements Specification (SRS), a dedicated image folder, and additional contexts were provided to the AI agent. This included:
+- **Context-Driven Development**: Utilizing the provided SRS and images to ensure the architecture and design accurately followed the project's specific requirements.
 - **Backend Initialization**: Scaffolding the Flask backend, configuring PostgreSQL database connections, and creating REST API endpoints for table reservations and newsletter subscriptions.
 - **Frontend Development**: Scaffolding the React/Vite single-page application, designing modern UI/UX components, writing custom modular CSS, and integrating the API.
 - **Debugging & Deployment**: Operating terminal processes (like `npm run dev` and `flask run`), debugging backend/frontend integration (such as CORS policy configuration), and managing dependencies.
